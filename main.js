@@ -86,5 +86,5 @@ function CleanFileName(name) {
 }
 
 function CleanDirectory(name) {
-    return name.replace(/[<>"|?*\x00-\x1F]/gi, '_'); // Strip any special characters
+    return name.replace(/[<>:"\/\\|?*\x00-\x1F]/gi, '_'); // Strip any special characters
 }
